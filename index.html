@@ -18,7 +18,7 @@
   </head>
   <body class="font-sora">
     <!-- Navbar starts -->
-    <section class="w-full border-b-2">
+    <section class="w-full border-b-2 z-50">
       <nav class="fluid-layout py-3 flex justify-between items-center">
         <h3 class="font-semibold text-xl">DIET PLAN</h3>
         <ul class="hidden md:flex items-center gap-x-4">
@@ -119,7 +119,7 @@
               <p class="description text-[#d9d9d9]"></p>
             </div>
             <div class="mt-4 flex flex-col space-y-2">
-              <div class="flex justify-between items-center">
+              <div class="flex justify-between items-center font-medium">
                 <p class="price"></p>
                 <p class="available"></p>
               </div>
@@ -186,6 +186,68 @@
       </div>
     </section>
     <!-- start using today ends -->
+    <!-- footer starts -->
+    <footer>
+      <section class="py-10 bg-[#231f20]">
+        <div class="fluid-layout grid grid-cols-12 gap-6 text-white">
+          <div class="col-span-full md:col-span-6">
+            <h2 class="mb-4 font-medium text-xl">DIET PLAN</h2>
+            <p class="max-w-[450px] text-[#d9d9d9]">
+              Our comprehensive diet plan is designed to optimize your nutrition
+              and support your health goals, ensuring a balanced and sustainable
+              approach to eating.
+            </p>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">PRODUCT</h4>
+            <ul class="product-container text-[#d9d9d9]">
+              <template id="product">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">ABOUT</h4>
+            <ul class="about-container text-[#d9d9d9]">
+              <template id="about">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <address
+            class="not-italic col-span-full md:col-span-6 lg:col-span-2 text-[#d9d9d9]"
+          >
+            <h4 class="mb-4">CONTACT</h4>
+            <p>MMSIT</p>
+            <p>09-445539703</p>
+            <p>Shan Kone Street</p>
+          </address>
+        </div>
+      </section>
+      <section class="py-4 bg-black text-white">
+        <div
+          class="fluid-layout flex flex-wrap gap-4 justify-between items-center"
+        >
+          <div class="left">
+            &copy;<span id="year"></span>-MMSIT | All rights reserved
+            <br />
+            Developed by
+            <a
+              href="https://www.facebook.com/james.christian.3914207"
+              target="_blank"
+              class="text-cyan-500 font-medium underline decoration-dashed"
+              >Marn Tet Zan</a
+            >
+          </div>
+          <div class="right">MMSIT BUD</div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer ends -->
     <script type="module" src="/main.js"></script>
   </body>
 </html>
