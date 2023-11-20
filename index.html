@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Vite App</title>
+  </head>
+  <body class="font-sora">
+    <!-- Navbar starts -->
+    <section class="w-full border-b-2">
+      <nav class="fluid-layout py-3 flex justify-between items-center">
+        <h3 class="font-semibold text-xl">DIET PLAN</h3>
+        <ul class="hidden md:flex items-center gap-x-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="./src/products.html">Products</a></li>
+          <li><a href="./src/about.html">About Us</a></li>
+          <li><a href="./src/contact.html">Contact Us</a></li>
+          <li>
+            <span class="material-symbols-outlined"> account_circle </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined">
+              notifications_active
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined"> shopping_cart </span>
+          </li>
+        </ul>
+        <button class="md:hidden">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+      </nav>
+    </section>
+    <!-- Navbar ends -->
+    <!-- Hero background image section starts -->
+    <section
+      class="w-full h-[650px] lg:min-h-[960px] bg-hero-img-1 bg-no-repeat bg-center bg-cover"
+    >
+      <div class="fluid-layout h-full grid grid-cols-12">
+        <div class="col-span-full lg:col-span-5 mt-16 lg:mt-48">
+          <h1 class="main-header">
+            Healthy Food<br class="hidden lg:inline" />
+            and Salad
+          </h1>
+          <p class="description">
+            We provide essential nutrients, vitamins, and minerals that nourish
+            the body and support overall well-being.
+          </p>
+          <div class="w-full flex space-x-8">
+            <div>
+              <h4>100%</h4>
+              <h5 class="font-semibold text-lg">Organic</h5>
+            </div>
+            <div>
+              <h4>0%</h4>
+              <h5 class="font-semibold text-lg">Fat</h5>
+            </div>
+            <div>
+              <h4>+90%</h4>
+              <h5 class="font-semibold text-lg">Protein</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Hero background image section ends -->
+    <!-- products and services starts -->
+    <section class="fluid-layout my-12">
+      <div class="flex flex-wrap justify-between items-center mb-8">
+        <div class="flex space-x-2 basis-full lg:basis-1/2">
+          <div class="w-1 h-[2.25rem] bg-black"></div>
+          <div>
+            <h2 class="text-2xl lg:text-4xl font-medium">
+              Products and Services
+            </h2>
+            <p class="text-[#493b4e] tracking-wide my-6">
+              We offers a wide range of high-quality products and services
+              tailored to meet the diverse needs and preferences of our
+              customers.
+            </p>
+          </div>
+        </div>
+        <button class="primary-btn">SEE MORE</button>
+      </div>
+      <!-- Food item cards starts -->
+      <div
+        class="w-full grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12 gap-6"
+        id="cards-container"
+      >
+        <template id="card">
+          <section
+            class="relative flex flex-col col-span-4 bg-[#231f20] text-white p-6 rounded-2xl mt-12"
+          >
+            <div class="shrink-0 -mt-20 mb-10">
+              <img
+                src="./assets/image-1.png"
+                alt="Food Items"
+                class="w-36 h-36 object-contain"
+              />
+            </div>
+            <div class="flex flex-col flex-1 space-y-4">
+              <h4 class="text-2xl font-medium"></h4>
+              <div>
+                ( <span class="rating"></span> ) |
+                <span class="review"></span> Reviews
+              </div>
+              <p class="description text-[#d9d9d9]"></p>
+            </div>
+            <div class="mt-4 flex flex-col space-y-2">
+              <div class="flex justify-between items-center">
+                <p class="price"></p>
+                <p class="available"></p>
+              </div>
+              <button class="w-full bg-white text-black px-10 py-2 rounded-lg">
+                Add to Cart
+              </button>
+            </div>
+          </section>
+        </template>
+      </div>
+      <!-- dots starts -->
+      <div class="flex space-x-2 justify-center items-center mt-8">
+        <div class="w-2 h-2 bg-black rounded-full"></div>
+        <div class="w-2 h-2 bg-[#d9d9d9] rounded-full"></div>
+        <div class="w-2 h-2 bg-[#d9d9d9] rounded-full"></div>
+      </div>
+      <!-- dots ends -->
+      <!-- Food item cards ends -->
+    </section>
+    <!-- products and services ends -->
+    <!-- why choose us starts -->
+    <section
+      class="w-full h-[650px] lg:min-h-[909px] mt-14 bg-hero-img-2 bg-no-repeat bg-center bg-cover"
+    >
+      <div
+        class="fluid-layout h-full grid items-start md:items-center grid-cols-12"
+      >
+        <div class="col-span-full md:col-start-9 md:col-span-4 mt-20 md:mt-0">
+          <div class="flex items-center space-x-4">
+            <h2 class="font-dancing-script text-2xl">Why Choose Us?</h2>
+            <div class="w-10 h-0.5 bg-black"></div>
+          </div>
+          <h1 class="main-header">
+            Refreshing<br class="hidden md:inline" />
+            Fruit Juice
+          </h1>
+          <p class="description">
+            Start your day with a burst of freshness, indulge in our
+            invigorating range of fresh juices from finest fruits
+          </p>
+          <button class="primary-btn">SHOW ALL</button>
+        </div>
+      </div>
+    </section>
+    <!-- why choose us ends -->
+    <!-- start using today starts -->
+    <section class="fluid-layout mt-12 md:my-20">
+      <div class="flex flex-wrap justify-between items-center mb-8">
+        <div class="flex space-x-2 basis-full lg:basis-1/2">
+          <div class="w-1 h-[2.25rem] bg-black"></div>
+          <div>
+            <h2 class="text-2xl lg:text-4xl font-medium">Start using Today</h2>
+            <p class="text-[#493b4e] tracking-wide my-6">
+              We offers a wide range of high-quality products and services
+              tailored to meet the diverse needs and preferences of our
+              customers.
+            </p>
+          </div>
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <button class="primary-btn">SIGNUP NOW</button>
+          <button class="secondary-btn">REGISTER</button>
+        </div>
+      </div>
+    </section>
+    <!-- start using today ends -->
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>

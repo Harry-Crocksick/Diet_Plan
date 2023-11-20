@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .fluid-layout {
+    @apply container mx-auto px-4 lg:px-20;
+  }
+
+  .primary-btn {
+    @apply bg-black w-48 px-4 py-2 text-white rounded-lg border border-black;
+  }
+
+  .secondary-btn {
+    @apply bg-white w-48 px-4 py-2 text-black rounded-lg border border-black;
+  }
+
+  .main-header {
+    @apply text-2xl lg:text-6xl font-medium lg:leading-snug;
+  }
+
+  .description {
+    @apply text-[#493b4e] tracking-wide lg:w-96 my-6;
+  }
+}
