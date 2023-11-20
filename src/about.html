@@ -3,9 +3,279 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Dient Plan</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>About Us</title>
   </head>
-  <body>
-    <h1>About</h1>
+  <body class="font-sora">
+    <!-- Navbar starts -->
+    <section class="border-b-2 z-50">
+      <nav class="fluid-layout py-3 flex justify-between items-center">
+        <h3 class="font-semibold text-xl">DIET PLAN</h3>
+        <ul class="hidden md:flex items-center gap-x-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              account_circle
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              notifications_active
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              shopping_cart
+            </span>
+          </li>
+        </ul>
+        <button class="md:hidden">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+      </nav>
+    </section>
+    <!-- Navbar ends -->
+    <!-- about hero starts -->
+    <section
+      class="relative w-full h-[590px] bg-about-hero-img-1 bg-no-repeat bg-center bg-cover"
+    >
+      <div
+        class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 text-center"
+      >
+        <h1 class="main-header">About Us</h1>
+        <p>Home / About Us</p>
+      </div>
+    </section>
+    <!-- about hero ends -->
+    <!-- choose us starts -->
+    <section class="fluid-layout my-14 flex flex-wrap items-center gap-8">
+      <div class="basis-full md:flex-1 shrink-0">
+        <img
+          src="../assets/choose-1.png"
+          alt="Choose us"
+          class="object-contain object-center"
+          loading="lazy"
+        />
+      </div>
+      <div class="basis-full md:basis-[55%]">
+        <div class="flex items-center space-x-4">
+          <h2 class="font-dancing-script text-2xl mb-2">Choose Us Today</h2>
+          <div class="w-10 h-0.5 bg-black"></div>
+        </div>
+        <h1 class="main-header mb-4">
+          Revitalizing <br class="hidden md:inline" />
+          Nutrient Fruits
+        </h1>
+        <p class="text-[#493b4e] tracking-wide my-6">
+          Experience the burst of flavors and nourishment with our selection of
+          refreshing, seasonal fruits and fresh food.
+        </p>
+        <ul class="grid gap-4 grid-cols-2 md:grid-cols-4 mb-6">
+          <li class="col-span-2 inline-flex items-center space-x-4">
+            <span
+              class="material-symbols-outlined text-[14px] text-emerald-500 p-1 bg-[#e3d9ea] rounded-full"
+            >
+              check
+            </span>
+            <p>Nature's bounty with fresh</p>
+          </li>
+          <li class="col-span-2 inline-flex items-center space-x-4">
+            <span
+              class="material-symbols-outlined text-[14px] text-emerald-500 p-1 bg-[#e3d9ea] rounded-full"
+            >
+              check
+            </span>
+            <p>Fresh Juice with Selections</p>
+          </li>
+          <li class="col-span-2 inline-flex items-center space-x-4">
+            <span
+              class="material-symbols-outlined text-[14px] text-emerald-500 p-1 bg-[#e3d9ea] rounded-full"
+            >
+              check
+            </span>
+            <p>Flavorful selection</p>
+          </li>
+          <li class="col-span-2 inline-flex items-center space-x-4">
+            <span
+              class="material-symbols-outlined text-[14px] text-emerald-500 p-1 bg-[#e3d9ea] rounded-full"
+            >
+              check
+            </span>
+            <p>Elevate Your Health!</p>
+          </li>
+        </ul>
+        <button class="primary-btn">CONNECT NOW</button>
+      </div>
+    </section>
+    <!-- choose us ends -->
+    <!-- meet with us starts -->
+    <section class="fluid-layout">
+      <div class="upper-section text-center">
+        <div class="flex justify-center items-center space-x-3">
+          <div class="w-10 h-0.5 bg-black"></div>
+          <h2 class="font-dancing-script text-2xl mb-2">Our Team</h2>
+          <div class="w-10 h-0.5 bg-black"></div>
+        </div>
+        <h1 class="main-header lg:text-5xl">Meet With Us</h1>
+        <p class="text-[#493b4e] tracking-wide">
+          We offers a wide range of high-quality products
+        </p>
+      </div>
+      <div class="chefs-container responsive-grid gap-8 mt-10 mb-16">
+        <template id="chef">
+          <div
+            class="col-span-4 text-center flex flex-col p-6 bg-[#f2f2f2c7] rounded-lg"
+          >
+            <div class="shrink-0 mb-4">
+              <img
+                src="/"
+                alt="/"
+                class="w-40 h-40 mx-auto object-contain object-center"
+              />
+            </div>
+            <h2 class="chef-name text-xl font-semibold"></h2>
+            <p class="position text-sm"></p>
+            <div class="flex justify-center items-center space-x-4 mt-4">
+              <span class="p-1 text-xs bg-[#d9d9d975] rounded-full"
+                ><i class="fa-brands fa-google fa-fw"></i
+              ></span>
+              <span class="p-1 text-xs bg-[#d9d9d975] rounded-full"
+                ><i class="fa-brands fa-facebook-f fa-fw"></i
+              ></span>
+              <span class="p-1 text-xs bg-[#d9d9d975] rounded-full"
+                ><i class="fa-brands fa-twitter fa-fw"></i
+              ></span>
+              <span class="p-1 text-xs bg-[#d9d9d975] rounded-full"
+                ><i class="fa-brands fa-linkedin-in fa-fw"></i
+              ></span>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!-- meet with us ends -->
+    <!-- nutrient starts -->
+    <section
+      class="w-full h-[703px] bg-no-repeat bg-cover bg-center bg-about-hero-img-2"
+    >
+      <div
+        class="fluid-layout h-full grid items-start md:items-center grid-cols-12"
+      >
+        <div class="col-span-full md:col-start-9 md:col-span-4 mt-20 md:mt-0">
+          <div class="flex items-center space-x-4">
+            <h2 class="font-dancing-script text-2xl">Organic Meal Plan</h2>
+            <div class="w-10 h-0.5 bg-black"></div>
+          </div>
+          <h1 class="main-header">
+            Nutrient<br class="hidden md:inline" />
+            Rich Fruit
+          </h1>
+          <p class="description">
+            Elevate your diet with our carefully selected organic fruits. Packed
+            with essential vitamins and antioxidants.
+          </p>
+          <button class="primary-btn">SHOW ALL</button>
+        </div>
+      </div>
+    </section>
+    <!-- nutrient ends -->
+    <!-- company logo starts -->
+    <section
+      class="fluid-layout responsive-grid gap-8 my-20"
+      id="logos-container"
+    >
+      <template id="logo">
+        <div
+          class="col-span-full sm:col-span-4 lg:col-span-3 px-8 py-4 bg-slate-100 rounded-lg"
+        >
+          <img
+            src=""
+            alt=""
+            class="w-28 mx-auto object-contain object-center"
+          />
+        </div>
+      </template>
+    </section>
+    <!-- company logo ends -->
+    <!-- footer starts -->
+    <footer>
+      <section class="py-10 bg-[#231f20]">
+        <div class="fluid-layout grid grid-cols-12 gap-6 text-white">
+          <div class="col-span-full md:col-span-6">
+            <h2 class="mb-4 font-medium text-xl">DIET PLAN</h2>
+            <p class="max-w-[450px] text-[#d9d9d9]">
+              Our comprehensive diet plan is designed to optimize your nutrition
+              and support your health goals, ensuring a balanced and sustainable
+              approach to eating.
+            </p>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">PRODUCT</h4>
+            <ul class="product-container text-[#d9d9d9]">
+              <template id="product">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">ABOUT</h4>
+            <ul class="about-container text-[#d9d9d9]">
+              <template id="about">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <address
+            class="not-italic col-span-full md:col-span-6 lg:col-span-2 text-[#d9d9d9]"
+          >
+            <h4 class="mb-4">CONTACT</h4>
+            <p>MMSIT</p>
+            <p>09-445539703</p>
+            <p>Shan Kone Street</p>
+          </address>
+        </div>
+      </section>
+      <section class="py-4 bg-black text-white">
+        <div
+          class="fluid-layout flex flex-wrap gap-4 justify-between items-center"
+        >
+          <div class="left">
+            &copy;<span id="year"></span>-MMSIT | All rights reserved
+            <br />
+            Developed by
+            <a
+              href="https://www.facebook.com/james.christian.3914207"
+              target="_blank"
+              class="text-cyan-500 font-medium underline decoration-dashed"
+              >Marn Tet Zan</a
+            >
+          </div>
+          <div class="right">MMSIT BUD</div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer ends -->
+    <script type="module" src="../main.js"></script>
+    <script src="./scripts/aboutLinks.js"></script>
+    <script src="./scripts/productLinks.js"></script>
+    <script src="./scripts/chefs.js"></script>
+    <script src="./scripts/logos.js"></script>
   </body>
 </html>

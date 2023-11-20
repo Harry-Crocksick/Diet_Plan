@@ -1,13 +1,13 @@
-const links = ["Our team", "Careers", "Press", "Stores"];
+const aboutLinks = ["Our team", "Careers", "Press", "Stores"];
 
-const container = document.querySelector(".about-container");
-const template = document.querySelector("#about");
+const aboutContainer = document.querySelector(".about-container");
+const aboutTemplate = document.querySelector("#about");
 
-links.forEach((link) => container.append(createLink(link)));
+aboutLinks.forEach((link) => aboutContainer.append(createLink(link)));
 
 function createLink(link) {
   const temp = link.split(" ");
-  const clone = template.content.cloneNode(true);
+  const clone = aboutTemplate.content.cloneNode(true);
   const a = clone.querySelector("li > a");
   a.setAttribute("href", temp[0].toLowerCase());
   a.innerText = link;

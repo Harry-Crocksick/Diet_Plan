@@ -1,8 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Sora:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer components {
+  .responsive-grid {
+    @apply grid grid-cols-4 md:grid-cols-8 lg:grid-cols-12;
+  }
+
   .fluid-layout {
     @apply container mx-auto px-4 lg:px-20;
   }
@@ -16,7 +22,7 @@
   }
 
   .main-header {
-    @apply text-2xl lg:text-6xl font-medium lg:leading-snug;
+    @apply text-2xl lg:text-6xl font-semibold lg:leading-snug;
   }
 
   .description {

@@ -1,3 +1,4 @@
+// Array of objects
 const products = [
   {
     id: "1",
@@ -37,12 +38,12 @@ const products = [
 ];
 
 const cardsContainer = document.querySelector("#cards-container");
-const template = document.querySelector("#card");
+const cardTemplate = document.querySelector("#card");
 
 products.forEach((product) => cardsContainer.append(createCard(product)));
 
 function createCard(product) {
-  const clone = template.content.cloneNode(true);
+  const clone = cardTemplate.content.cloneNode(true);
   const image = clone.querySelector("img");
   const heading = clone.querySelector("h4");
   const description = clone.querySelector(".description");
@@ -62,7 +63,7 @@ function createCard(product) {
 
   if (product.tag) {
     const tagElem = document.createElement("div");
-    tagElem.setAttribute("class", "tag");
+    tagElem.setAttribute("class", "");
     tagElem.className =
       "absolute top-4 right-6 text-xs font-medium bg-[#c2ccce66] px-2 py-1 rounded";
     tagElem.innerText = product.tag.toUpperCase();

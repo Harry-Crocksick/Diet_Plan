@@ -3,9 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Diet Plan</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <title>Contact Page</title>
   </head>
-  <body>
-    <h1>Contact Us</h1>
+  <body class="font-sora">
+    <!-- Navbar starts -->
+    <section class="border-b-2 z-50">
+      <nav class="fluid-layout py-3 flex justify-between items-center">
+        <h3 class="font-semibold text-xl">DIET PLAN</h3>
+        <ul class="hidden md:flex items-center gap-x-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              account_circle
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              notifications_active
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              shopping_cart
+            </span>
+          </li>
+        </ul>
+        <button class="md:hidden">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+      </nav>
+    </section>
+    <!-- Navbar ends -->
+    <!-- contact hero starts -->
+    <section
+      class="flex justify-center items-center w-full h-[597px] bg-no-repeat bg-cover bg-center bg-contact-hero-img-1"
+    >
+      <div class="text-center">
+        <h1 class="main-header">Contact Us</h1>
+        <p>Home / About Us</p>
+      </div>
+    </section>
+    <!-- contact hero ends -->
+    <!-- footer starts -->
+    <footer>
+      <section class="py-10 bg-[#231f20]">
+        <div class="fluid-layout grid grid-cols-12 gap-6 text-white">
+          <div class="col-span-full md:col-span-6">
+            <h2 class="mb-4 font-medium text-xl">DIET PLAN</h2>
+            <p class="max-w-[450px] text-[#d9d9d9]">
+              Our comprehensive diet plan is designed to optimize your nutrition
+              and support your health goals, ensuring a balanced and sustainable
+              approach to eating.
+            </p>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">PRODUCT</h4>
+            <ul class="product-container text-[#d9d9d9]">
+              <template id="product">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">ABOUT</h4>
+            <ul class="about-container text-[#d9d9d9]">
+              <template id="about">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <address
+            class="not-italic col-span-full md:col-span-6 lg:col-span-2 text-[#d9d9d9]"
+          >
+            <h4 class="mb-4">CONTACT</h4>
+            <p>MMSIT</p>
+            <p>09-445539703</p>
+            <p>Shan Kone Street</p>
+          </address>
+        </div>
+      </section>
+      <section class="py-4 bg-black text-white">
+        <div
+          class="fluid-layout flex flex-wrap gap-4 justify-between items-center"
+        >
+          <div class="left">
+            &copy;<span id="year"></span>-MMSIT | All rights reserved
+            <br />
+            Developed by
+            <a
+              href="https://www.facebook.com/james.christian.3914207"
+              target="_blank"
+              class="text-cyan-500 font-medium underline decoration-dashed"
+              >Marn Tet Zan</a
+            >
+          </div>
+          <div class="right">MMSIT BUD</div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer ends -->
+    <script type="module" src="../main.js"></script>
+    <script src="./scripts/aboutLinks.js"></script>
+    <script src="./scripts/productLinks.js"></script>
   </body>
 </html>
