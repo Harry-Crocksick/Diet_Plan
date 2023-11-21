@@ -51,6 +51,131 @@
       </div>
     </section>
     <!-- contact hero ends -->
+    <!-- get in touch starts -->
+    <section class="fluid-layout my-16">
+      <div class="text-center">
+        <div class="flex justify-center items-center space-x-3">
+          <div class="w-10 h-0.5 bg-black"></div>
+          <h2 class="font-dancing-script text-2xl mb-2">Contact Us</h2>
+          <div class="w-10 h-0.5 bg-black"></div>
+        </div>
+        <h1 class="main-header lg:text-5xl">Get in touch with us</h1>
+        <p class="text-[#493b4e] tracking-wide">
+          Contact for assistance and personalized dietary guidance.
+        </p>
+      </div>
+      <div class="responsive-grid gap-4 mt-10" id="contactCardContainer">
+        <template id="contactCard">
+          <div
+            class="flex justify-center items-center col-span-4 bg-[#e3e29060] py-8 px-3 rounded-lg"
+          >
+            <div class="flex items-center space-x-8">
+              <div class="">
+                <h2 class="text-xl font-semibold"></h2>
+                <p></p>
+              </div>
+              <div class="bg-white rounded-full p-4 shrink-0">
+                <img
+                  src=""
+                  alt=""
+                  class="w-14 h-14 object-contain object-center"
+                />
+              </div>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!-- get in touch ends -->
+    <!-- FAQ starts -->
+    <section class="fluid-layout my-16">
+      <div class="text-center">
+        <div class="flex justify-center items-center space-x-3">
+          <div class="w-10 h-0.5 bg-black"></div>
+          <h2 class="font-dancing-script text-2xl mb-2">Helpful Information</h2>
+          <div class="w-10 h-0.5 bg-black"></div>
+        </div>
+        <h1 class="main-header lg:text-5xl">Frequently Ask Questions</h1>
+        <p class="text-[#493b4e] tracking-wide mt-4">
+          Explore our comprehensive for dieting and nutrition
+        </p>
+      </div>
+      <div
+        class="grid grid-cols-2 lg:grid-cols-4 gap-8 mt-14"
+        id="faqContainer"
+      >
+        <template id="faq">
+          <div class="col-span-2">
+            <h4 class="text-xl font-semibold mb-4"></h4>
+            <p></p>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!-- FAQ ends -->
+    <!-- reach out starts -->
+    <section class="fluid-layout my-16">
+      <div class="text-center">
+        <div class="flex justify-center items-center space-x-3">
+          <div class="w-10 h-0.5 bg-black"></div>
+          <h2 class="font-dancing-script text-2xl mb-2">Connect with us</h2>
+          <div class="w-10 h-0.5 bg-black"></div>
+        </div>
+        <h1 class="main-header lg:text-5xl">Feel free to reach out</h1>
+        <p class="text-[#493b4e] tracking-wide mt-4">
+          Feel free to contact us for any assistance you may need.
+        </p>
+      </div>
+      <div class="flex flex-wrap gap-8 items-center mt-12 mb-16">
+        <div class="basis-full md:basis-1/2 mx-auto">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3818.76680603175!2d96.1312435748582!3d16.837920818402257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30c195111f0461f5%3A0x224087b3abdc6b2a!2sInya%20View%20Motel%20Yangon!5e0!3m2!1sen!2smm!4v1700570326171!5m2!1sen!2smm"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+            class="w-[380px] h-[270px] sm:w-[350px] sm:h-[300px] mx-auto lg:w-full lg:h-[450px] object-contain object-center rounded-lg"
+          ></iframe>
+        </div>
+        <form
+          action="/"
+          method="post"
+          class="basis-full md:flex-1 flex flex-col space-y-4"
+        >
+          <div>
+            <label for="fullName" class="block">Full Name</label>
+            <input
+              type="text"
+              name="fullName"
+              id="fullName"
+              class="w-full rounded-md"
+            />
+          </div>
+          <div>
+            <label for="email" class="block">Email</label>
+            <input
+              type="text"
+              name="email"
+              id="email"
+              class="w-full rounded-md"
+            />
+          </div>
+          <div>
+            <label for="message" class="block">Message</label>
+            <textarea
+              name="message"
+              id="message"
+              rows="5"
+              class="w-full rounded-md"
+            ></textarea>
+          </div>
+          <button type="submit" class="primary-btn mt-10 ml-auto">
+            SUBMIT REQUEST
+          </button>
+        </form>
+      </div>
+    </section>
+    <!-- reach out ends -->
     <!-- footer starts -->
     <footer>
       <section class="py-10 bg-[#231f20]">
@@ -116,5 +241,7 @@
     <script type="module" src="../main.js"></script>
     <script src="./scripts/aboutLinks.js"></script>
     <script src="./scripts/productLinks.js"></script>
+    <script src="./scripts/contactCard.js"></script>
+    <script src="./scripts/FAQ.js"></script>
   </body>
 </html>
