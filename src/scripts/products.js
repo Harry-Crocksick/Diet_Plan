@@ -10,7 +10,7 @@ const products = [
     image: "../../assets/image-1.png",
     tag: "hot items",
     review: 10,
-    rating: 3,
+    rating: 1.9,
   },
   {
     id: "2",
@@ -21,7 +21,7 @@ const products = [
     available: "+70",
     image: "../../assets/image-2.png",
     review: 15,
-    rating: 4,
+    rating: 2.5,
   },
   {
     id: "3",
@@ -33,7 +33,7 @@ const products = [
     image: "../../assets/image-6.png",
     tag: "new items",
     review: 25,
-    rating: 2,
+    rating: 4,
   },
 ];
 const halfStarSvg = `
@@ -99,7 +99,7 @@ function star(rating) {
       starsArray.push(emptyStarSvg);
     }
   }
-  if (Math.round(rating) > rating) {
+  if (rating === Math.floor(rating) + 0.5) {
     starsArray[Math.ceil(rating) - 1] = starsArray[Math.floor(rating)].replace(
       fullStarSvg,
       halfStarSvg
