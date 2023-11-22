@@ -3,9 +3,113 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
     <title>Diet Plan</title>
   </head>
-  <body>
-    <h1>Products</h1>
+  <body class="font-sora">
+    <!-- Navbar starts -->
+    <section class="border-b-2 z-50">
+      <nav class="fluid-layout py-3 flex justify-between items-center">
+        <h3 class="font-semibold text-xl">DIET PLAN</h3>
+        <ul class="hidden md:flex items-center gap-x-4">
+          <li><a href="/">Home</a></li>
+          <li><a href="./products.html">Products</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="./contact.html">Contact Us</a></li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              account_circle
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              notifications_active
+            </span>
+          </li>
+          <li>
+            <span class="material-symbols-outlined align-middle">
+              shopping_cart
+            </span>
+          </li>
+        </ul>
+        <button class="md:hidden">
+          <span class="material-symbols-outlined"> menu </span>
+        </button>
+      </nav>
+    </section>
+    <!-- Navbar ends -->
+    <!-- product hero starts -->
+    <section
+      class="flex justify-center items-center w-full h-[597px] bg-no-repeat bg-cover bg-center bg-product-hero-img-1"
+    >
+      <div class="text-center">
+        <h1 class="main-header">Welcome to Diet Plan</h1>
+        <p>Home / Products</p>
+      </div>
+    </section>
+    <!-- product hero ends -->
+    <section class="fluid-layout my-24">
+      <div class="responsive-grid gap-8">
+        <div
+          class="relative px-6 py-10 col-span-full xl:col-span-4 bg-teal-100/80 rounded-lg overflow-hidden"
+        >
+          <h3 class="font-bold text-black text-xl">Special Set</h3>
+          <p class="my-3 text-sm max-w-[10rem] xl:max-w-[15rem] z-10">
+            A healthy balanced diet plan to individual health goals.
+          </p>
+          <button
+            class="px-4 py-2 text-xs font-semibold bg-black text-white rounded-full"
+          >
+            START NOW
+          </button>
+          <img
+            src="../assets/image 9.png"
+            alt="Set 1"
+            class="absolute -right-10 -bottom-10 z-0"
+          />
+        </div>
+        <div
+          class="relative px-6 py-10 col-span-full xl:col-span-4 bg-pink-100/80 rounded-lg overflow-hidden"
+        >
+          <h3 class="font-bold text-black text-xl">Fresh Juices</h3>
+          <p class="my-3 text-sm max-w-[10rem] xl:max-w-[15rem] z-10">
+            Tailored fresh juice blends for a quick and nutritious boost.
+          </p>
+          <button
+            class="px-4 py-2 text-xs font-semibold bg-black text-white rounded-full"
+          >
+            START NOW
+          </button>
+          <img
+            src="../assets/fresh-juice.png"
+            alt="Set 1"
+            class="absolute right-0 bottom-0 z-0"
+          />
+        </div>
+        <div
+          class="relative px-6 py-10 col-span-full xl:col-span-4 bg-teal-100/80 rounded-lg overflow-hidden"
+        >
+          <h3 class="font-bold text-black text-xl">Customer Set</h3>
+          <p class="my-3 text-sm max-w-[10rem] xl:max-w-[15rem] z-10">
+            We offer uniquely to meet your beauty and health needs.
+          </p>
+          <button
+            class="px-4 py-2 text-xs font-semibold bg-black text-white rounded-full"
+          >
+            START NOW
+          </button>
+          <img
+            src="../assets/customer-set.png"
+            alt="Set 1"
+            class="w-72 h-72 object-contain absolute -right-24 -bottom-14 z-0"
+          />
+        </div>
+      </div>
+    </section>
+    <script type="module" src="../main.js"></script>
+    <script src=""></script>
   </body>
 </html>

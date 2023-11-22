@@ -10,7 +10,7 @@
   }
 
   .fluid-layout {
-    @apply container mx-auto px-4 lg:px-20;
+    @apply container mx-auto px-4 xl:px-20;
   }
 
   .primary-btn {

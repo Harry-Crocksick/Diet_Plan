@@ -13,8 +13,10 @@ export default {
         "hero-img-2":
           "linear-gradient(to bottom, rgba(255, 255, 255, 0.75), transparent), url(/assets/healthy-juice.png)",
         "about-hero-img-1": "url(/assets/hero-image-2.png)",
-        "about-hero-img-2": "url(/assets/about-hero-2.png)",
+        "about-hero-img-2":
+          "linear-gradient(to bottom, rgba(255, 255, 255, 0.75), transparent), url(/assets/about-hero-2.png)",
         "contact-hero-img-1": "url(/assets/contact-hero-1.png)",
+        "product-hero-img-1": "url(/assets/product-hero-img-1.png)",
       },
     },
   },
