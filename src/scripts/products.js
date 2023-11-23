@@ -33,7 +33,7 @@ const products = [
     image: "../../assets/image-6.png",
     tag: "new items",
     review: 25,
-    rating: 4,
+    rating: 4.2,
   },
 ];
 const halfStarSvg = `
@@ -100,7 +100,7 @@ function star(rating) {
     }
   }
   if (rating === Math.floor(rating) + 0.5) {
-    starsArray[Math.ceil(rating) - 1] = starsArray[Math.floor(rating)].replace(
+    starsArray[Math.floor(rating)] = starsArray[Math.floor(rating)].replace(
       fullStarSvg,
       halfStarSvg
     );
