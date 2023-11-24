@@ -12,7 +12,9 @@
   <body class="font-sora">
     <!-- Navbar starts -->
     <section class="border-b-2 z-50">
-      <nav class="fluid-layout py-3 flex justify-between items-center">
+      <nav
+        class="secondary-fluid-layout py-3 flex justify-between items-center"
+      >
         <h3 class="font-semibold text-xl">DIET PLAN</h3>
         <ul class="hidden md:flex items-center gap-x-4">
           <li><a href="/">Home</a></li>
@@ -51,10 +53,11 @@
       </div>
     </section>
     <!-- product hero ends -->
+    <!-- product set starts -->
     <section class="fluid-layout my-24">
       <div class="responsive-grid gap-8">
         <div
-          class="relative px-6 py-10 col-span-full xl:col-span-4 bg-teal-100/80 rounded-lg overflow-hidden"
+          class="relative px-6 py-10 col-span-full lg:col-span-4 bg-teal-100/80 rounded-lg overflow-hidden"
         >
           <h3 class="font-bold text-black text-xl">Special Set</h3>
           <p class="my-3 text-sm max-w-[10rem] xl:max-w-[15rem] z-10">
@@ -68,11 +71,11 @@
           <img
             src="../assets/image 9.png"
             alt="Set 1"
-            class="absolute -right-10 -bottom-10 z-0"
+            class="absolute -right-24 md:-right-16 lg:-right-24 -bottom-10 z-0"
           />
         </div>
         <div
-          class="relative px-6 py-10 col-span-full xl:col-span-4 bg-pink-100/80 rounded-lg overflow-hidden"
+          class="relative px-6 py-10 col-span-full lg:col-span-4 bg-pink-100/80 rounded-lg overflow-hidden"
         >
           <h3 class="font-bold text-black text-xl">Fresh Juices</h3>
           <p class="my-3 text-sm max-w-[10rem] xl:max-w-[15rem] z-10">
@@ -90,7 +93,7 @@
           />
         </div>
         <div
-          class="relative px-6 py-10 col-span-full xl:col-span-4 bg-teal-100/80 rounded-lg overflow-hidden"
+          class="relative px-6 py-10 col-span-full lg:col-span-4 bg-teal-100/80 rounded-lg overflow-hidden"
         >
           <h3 class="font-bold text-black text-xl">Customer Set</h3>
           <p class="my-3 text-sm max-w-[10rem] xl:max-w-[15rem] z-10">
@@ -104,12 +107,319 @@
           <img
             src="../assets/customer-set.png"
             alt="Set 1"
-            class="w-72 h-72 object-contain absolute -right-24 -bottom-14 z-0"
+            class="w-72 h-72 object-contain absolute -right-40 md:-right-28 xl:-right-40 -bottom-14 z-0"
           />
         </div>
       </div>
     </section>
+    <!-- product set ends -->
+    <!-- search starts -->
+    <section class="fluid-layout">
+      <div class="flex flex-wrap items-center gap-4 justify-between">
+        <div
+          class="flex items-center max-w-[475px] w-full border-2 border-black rounded-full px-4 py-1"
+        >
+          <span class="material-symbols-outlined"> search </span>
+          <input
+            type="search"
+            name="search"
+            id="search"
+            class="flex-1 border-none focus:bg-slate-100 focus:ring-0"
+            placeholder="Search"
+          />
+          <!-- <span class="material-symbols-outlined"> close </span> -->
+        </div>
+        <div class="flex flex-wrap items-center gap-2">
+          <div class="filter-tag">
+            <span aria-label="Show">Show: </span>
+            <span class="text-slate-500">1 of 5</span>
+          </div>
+          <div class="filter-tag">
+            <span aria-label="Sort by">Sort By: </span>
+            <span class="text-slate-500">Newest</span>
+          </div>
+          <div class="filter-tag">
+            <span class="material-symbols-outlined"> filter_alt </span>
+            <span>Filter</span>
+          </div>
+        </div>
+      </div>
+      <div class="flex flex-wrap justify-between items-center my-12">
+        <div class="flex space-x-2 basis-full lg:basis-1/2">
+          <div class="w-1 h-[2.25rem] bg-black"></div>
+          <div>
+            <h2 class="text-2xl lg:text-4xl font-semibold">Special Set</h2>
+            <p class="text-[#493b4e] tracking-wide my-6">
+              Your unique diet plan, crafted for your health and taste
+              preferences and personalized approah to welliness.
+            </p>
+          </div>
+        </div>
+        <button class="primary-btn">SEE MORE</button>
+      </div>
+      <!-- special set cards starts -->
+      <div class="w-full responsive-grid gap-6" id="productCardsContainer">
+        <template id="productFoodCard">
+          <section
+            class="relative flex flex-col col-span-4 bg-[#231f20] text-white p-6 rounded-2xl mt-12"
+          >
+            <div class="shrink-0 -mt-20 mb-10">
+              <img
+                src="./assets/image-1.png"
+                alt="Food Items"
+                class="w-36 h-36 responsive-image"
+              />
+            </div>
+            <div class="flex flex-col flex-1 space-y-4">
+              <h4 class="text-2xl font-medium"></h4>
+              <div class="flex items-center space-x-3">
+                <span class="stars inline-flex space-x-2"></span>
+                <span class="audience-score"></span>
+              </div>
+              <p class="description text-[#d9d9d9]"></p>
+            </div>
+            <div class="mt-4 flex flex-col space-y-2">
+              <div class="flex justify-between items-center font-medium">
+                <p class="price"></p>
+                <p class="available"></p>
+              </div>
+              <button class="w-full bg-white text-black px-10 py-2 rounded-lg">
+                Add to Cart
+              </button>
+            </div>
+          </section>
+        </template>
+      </div>
+      <!-- special set cards ends -->
+      <div class="flex flex-wrap justify-between items-center my-12">
+        <div class="flex space-x-2 basis-full lg:basis-1/2">
+          <div class="w-1 h-[2.25rem] bg-black"></div>
+          <div>
+            <h2 class="text-2xl lg:text-4xl font-semibold">Fresh Juices</h2>
+            <p class="text-[#493b4e] tracking-wide my-6">
+              Savor the goodness of a custom blend designed just for you, packed
+              with nutrients and freshness to invigorate your health.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <button class="primary-btn w-20">
+            <span class="material-symbols-outlined align-middle">
+              arrow_back_ios
+            </span>
+          </button>
+          <button class="primary-btn w-20">
+            <span class="material-symbols-outlined align-middle">
+              arrow_forward_ios
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- fresh juice cards starts -->
+      <div class="w-full responsive-grid gap-6" id="freshJuiceCardContainer">
+        <template id="freshJuiceCard">
+          <section
+            class="relative flex flex-col col-span-4 bg-[#231f20] text-white p-6 rounded-2xl mt-12"
+          >
+            <div class="shrink-0 -mt-20 mb-10">
+              <img src="" alt="Food Items" class="w-36 h-36 responsive-image" />
+            </div>
+            <div class="flex flex-col flex-1 space-y-4">
+              <h4 class="text-2xl font-medium"></h4>
+              <div class="flex items-center space-x-3">
+                <span class="stars inline-flex space-x-2"></span>
+                <span class="audience-score"></span>
+              </div>
+              <p class="description text-[#d9d9d9]"></p>
+            </div>
+            <div class="mt-4 flex flex-col space-y-2">
+              <div class="flex justify-between items-center font-medium">
+                <p class="price"></p>
+                <p class="available"></p>
+              </div>
+              <button class="w-full bg-white text-black px-10 py-2 rounded-lg">
+                Add to Cart
+              </button>
+            </div>
+          </section>
+        </template>
+      </div>
+      <!-- fresh juice cards ends -->
+      <section
+        class="responsive-grid gap-8 px-4 py-2 lg:py-0 justify-center items-center mt-12 lg:mt-24 bg-yellow-100/50 rounded-lg overflow-hidden"
+      >
+        <div class="col-span-full lg:col-span-6 shrink-0">
+          <img
+            src="../assets/customer-set.png"
+            alt="customer set"
+            class="responsive-image mx-auto"
+          />
+        </div>
+        <div class="relative col-span-full lg:col-span-6">
+          <div class="flex items-center space-x-3">
+            <h2 class="font-dancing-script text-2xl mb-2">Create Special</h2>
+            <div class="w-10 h-0.5 bg-black"></div>
+          </div>
+          <h1 class="text-2xl xl:text-4xl font-semibold my-2">
+            Make Your Own <br class="hidden md:inline" />Creation Special Set
+          </h1>
+          <p class="text-[#493b4e] tracking-wide max-w-[450px]">
+            Energize with our nutritious healthy salad, bursting with fresh
+            greens and vibrant superfoods.
+          </p>
+          <button class="primary-btn mt-4">CREATE SET</button>
+          <img
+            src="../assets/scatter.png"
+            alt="Scatter Fruits"
+            class="hidden lg:block absolute -bottom-36 -right-32"
+          />
+        </div>
+      </section>
+      <div class="flex flex-wrap justify-between items-center mt-24 mb-12">
+        <div class="flex space-x-2 basis-full lg:basis-1/2">
+          <div class="w-1 h-[2.25rem] bg-black"></div>
+          <div>
+            <h2 class="text-2xl lg:text-4xl font-semibold">Daily Best Sale</h2>
+            <p class="text-[#493b4e] tracking-wide my-6">
+              We offers a wide range of high-quality products and services
+              tailored to meet the diverse needs and preferences of our
+              customers.
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <button class="primary-btn w-20">
+            <span class="material-symbols-outlined align-middle">
+              arrow_back_ios
+            </span>
+          </button>
+          <button class="primary-btn w-20">
+            <span class="material-symbols-outlined align-middle">
+              arrow_forward_ios
+            </span>
+          </button>
+        </div>
+      </div>
+      <!-- daily set card starts -->
+      <div class="w-full responsive-grid gap-6" id="dailySetCardContainer">
+        <template id="dailySetCard">
+          <section
+            class="relative flex flex-col col-span-4 bg-[#231f20] text-white p-6 rounded-2xl mt-12"
+          >
+            <div class="shrink-0 -mt-20 mb-10">
+              <img src="" alt="Food Items" class="w-36 h-36 responsive-image" />
+            </div>
+            <div class="flex flex-col flex-1 space-y-4">
+              <h4 class="text-2xl font-medium"></h4>
+              <div class="flex items-center space-x-3">
+                <span class="stars inline-flex space-x-2"></span>
+                <span class="audience-score"></span>
+              </div>
+              <p class="description text-[#d9d9d9]"></p>
+            </div>
+            <div class="mt-4 flex flex-col space-y-2">
+              <div class="flex justify-between items-center font-medium">
+                <p class="price"></p>
+                <p class="available"></p>
+              </div>
+              <button class="w-full bg-white text-black px-10 py-2 rounded-lg">
+                Add to Cart
+              </button>
+            </div>
+          </section>
+        </template>
+      </div>
+      <!-- daily set card ends -->
+      <!-- product food item cards ends -->
+    </section>
+    <!-- search ends -->
+    <!-- delivery starts -->
+    <section class="fluid-layout my-12 lg:my-24">
+      <div class="responsive-grid gap-8" id="deliveryCardContainer">
+        <template id="deliveryCard">
+          <div
+            class="col-span-4 px-4 py-8 flex gap-6 justify-center items-center bg-slate-100 rounded-md"
+          >
+            <div class="shrink-0">
+              <img src="../assets/car.png" alt="Car" />
+            </div>
+            <div>
+              <h4 class="font-semibold text-xl">Free Delivery</h4>
+              <p class="text-slate-500">120923093209</p>
+            </div>
+          </div>
+        </template>
+      </div>
+    </section>
+    <!-- delivery ends -->
+    <!-- footer starts -->
+    <footer class="mt-12 lg:mt-24">
+      <section class="py-10 bg-[#231f20]">
+        <div class="secondary-fluid-layout grid grid-cols-12 gap-6 text-white">
+          <div class="col-span-full md:col-span-6">
+            <h2 class="mb-4 font-medium text-xl">DIET PLAN</h2>
+            <p class="max-w-[450px] text-[#d9d9d9]">
+              Our comprehensive diet plan is designed to optimize your nutrition
+              and support your health goals, ensuring a balanced and sustainable
+              approach to eating.
+            </p>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">PRODUCT</h4>
+            <ul class="product-container text-[#d9d9d9]">
+              <template id="product">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <div class="col-span-full md:col-span-6 lg:col-span-2">
+            <h4 class="mb-4">ABOUT</h4>
+            <ul class="about-container text-[#d9d9d9]">
+              <template id="about">
+                <li>
+                  <a href="/" class="hover:text-cyan-500 transition-colors"></a>
+                </li>
+              </template>
+            </ul>
+          </div>
+          <address
+            class="not-italic col-span-full md:col-span-6 lg:col-span-2 text-[#d9d9d9]"
+          >
+            <h4 class="mb-4">CONTACT</h4>
+            <p>MMSIT</p>
+            <p>09-445539703</p>
+            <p>Shan Kone Street</p>
+          </address>
+        </div>
+      </section>
+      <section class="py-4 bg-black text-white">
+        <div
+          class="secondary-fluid-layout flex flex-wrap gap-4 justify-between items-center"
+        >
+          <div class="left">
+            &copy;<span id="year"></span>-MMSIT | All rights reserved
+            <br />
+            Developed by
+            <a
+              href="https://www.facebook.com/james.christian.3914207"
+              target="_blank"
+              class="text-cyan-500 font-medium underline decoration-dashed"
+              >Marn Tet Zan</a
+            >
+          </div>
+          <div class="right">MMSIT BUD</div>
+        </div>
+      </section>
+    </footer>
+    <!-- footer ends -->
     <script type="module" src="../main.js"></script>
-    <script src=""></script>
+    <script src="./scripts/dailySet.js"></script>
+    <script src="./scripts/delivery.js"></script>
+    <script src="./scripts/freshJuiceSet.js"></script>
+    <script src="./scripts/specialSet.js"></script>
+    <script src="./scripts/aboutLinks.js"></script>
+    <script src="./scripts/productLinks.js"></script>
   </body>
 </html>

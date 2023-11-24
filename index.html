@@ -95,8 +95,8 @@
         <button class="primary-btn">SEE MORE</button>
       </div>
       <!-- Food item cards starts -->
-      <div class="w-full responsive-grid gap-6" id="cards-container">
-        <template id="card">
+      <div class="w-full responsive-grid gap-6" id="homeCardsContainer">
+        <template id="homeCard">
           <section
             class="relative flex flex-col col-span-4 bg-[#231f20] text-white p-6 rounded-2xl mt-12"
           >
@@ -127,6 +127,7 @@
           </section>
         </template>
       </div>
+      <!-- Food item cards ends -->
       <!-- dots starts -->
       <div class="flex space-x-2 justify-center items-center mt-8">
         <div class="w-2 h-2 bg-black rounded-full"></div>
@@ -246,7 +247,7 @@
     </footer>
     <!-- footer ends -->
     <script type="module" src="/main.js"></script>
-    <script src="./src/scripts/products.js"></script>
+    <script type="module" src="./src/scripts/products.js"></script>
     <script src="./src/scripts/aboutLinks.js"></script>
     <script src="./src/scripts/productLinks.js"></script>
   </body>

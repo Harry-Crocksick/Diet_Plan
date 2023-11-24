@@ -18,7 +18,7 @@
   }
 
   .primary-btn {
-    @apply bg-black w-48 px-4 py-2 text-white rounded-lg border border-black;
+    @apply bg-black w-48 text-center px-4 py-2 text-white rounded-lg border border-black;
   }
 
   .secondary-btn {
@@ -30,6 +30,14 @@
   }
 
   .description {
-    @apply text-[#493b4e] tracking-wide lg:w-96 my-6;
+    @apply text-[#493b4e] tracking-wide lg:max-w-[24rem] my-6;
+  }
+
+  .filter-tag {
+    @apply flex items-center space-x-2 px-2 py-1 lg:px-4 lg:py-2.5 border-2 border-black rounded-full;
+  }
+
+  .responsive-image {
+    @apply object-cover object-center max-w-full;
   }
 }
